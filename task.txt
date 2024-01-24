@@ -1,0 +1,61 @@
+CREATE NODE JS API
+
+Step 1 - Create New Folde, Open in VS Code, Open Terminal
+Step 2 - npm init -y
+Step 3 - npm i express
+Step 4 - npm i nodemon
+Step 5 - Update Script in Package.json
+
+                {
+                "name": "node-api",
+                "version": "1.0.0",
+                "description": "",
+                "main": "index.js",
+                "scripts": {
+                    "start": "node app.js",
+                    "dev": "nodemon app.js"
+                },
+                "author": "",
+                "license": "ISC",
+                "dependencies": {
+                    "express": "^4.18.2",
+                    "nodemon": "^3.0.3"
+                }
+                }
+
+
+Step 6 - Create File Named with app.json
+
+                const express = require('express')
+
+                const app = express();
+                const port = process.env.PORT || 8000;
+
+                // Routes 
+                app.get("/",(req,res) => {
+                    res.send("Hi, I am Live");
+                })
+
+                const start = async() => {
+                    try {
+                        app.listen(port,( )=> {
+                            console.log(`${port} Yes I am Connected !`);
+                        })
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+
+                start();
+
+
+
+
+                // app.listen(port,()=>console.log('Server Started at Port ${port}'))
+
+
+Step 7 - npm i nodemon
+Step 8 - npm run dev
+
+Step 9 - npm i mongoose
+Step 10 - npm i dotenv
