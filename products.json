@@ -1,0 +1,39 @@
+[
+    {
+      "name": "iphone",
+      "price": 152,
+      "company": "apple"
+    },
+    {
+      "name": "ipad",
+      "price": 152,
+      "company": "apple"
+    },
+    {
+      "name": "imac",
+      "price": 152,
+      "company": "apple"
+    },
+    {
+      "name": "tablet",
+      "price": 152,
+      "featured": true,
+      "company": "samsung"
+    },
+    {
+      "name": "galaxy note 4",
+      "price": 152,
+      "company": "samsung"
+    },
+    {
+      "name": "laptop",
+      "price": 152,
+      "featured": true,
+      "company": "dell"
+    },
+    {
+      "name": "harddisk",
+      "price": 152,
+      "company": "dell"
+    }
+  ]
