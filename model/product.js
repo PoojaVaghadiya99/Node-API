@@ -9,7 +9,7 @@ const productSchema = new mongoose.Schema({
     default: 4.9,
     required: [true, "Rating Must be Provided"],
   },
-  creditedAt:{type:Date,default:Date.now()},
+  creditedAt: { type: Date, default: Date.now() },
   company: {
     type: String,
     enum: {
@@ -19,4 +19,4 @@ const productSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Product",productSchema)
+module.exports = mongoose.model("Product", productSchema);
